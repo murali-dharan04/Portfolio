@@ -1,7 +1,7 @@
 import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 
 export const personalInfo = {
-  name: "Murali Dharan",
+  name: "Muralidharan.E",
   role: "AI/ML Engineer",
   tagline: "Passionate about building intelligent systems.",
   profileImage: "/profile.jpeg",
