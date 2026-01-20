@@ -6,7 +6,7 @@ const Education = () => {
     <section id="education">
       <div className="section-container">
         <h2 className="section-title">Education & Certifications</h2>
-        
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Education */}
           <div>
@@ -41,6 +41,8 @@ const Education = () => {
                   <div className="flex items-center gap-4 text-sm text-muted-foreground">
                     <span>{cert.issuer}</span>
                     <span className="text-primary">{cert.year}</span>
+                    {/** @ts-ignore */}
+                    <span>{cert.score}</span>
                   </div>
                 </div>
               ))}
