@@ -25,8 +25,10 @@ const Hero = () => {
           <p className="code-text text-lg mb-4 animate-fade-up">
             Hello, I'm
           </p>
-          <h1 className="text-5xl md:text-7xl font-bold mb-4 animate-fade-up-delay-1">
-            {personalInfo.name}
+          <h1 className="text-5xl md:text-7xl font-bold mb-4 flex items-center gap-2 h-[1.2em]">
+            <span className="animate-typing">
+              {personalInfo.name}
+            </span>
             <span className="text-gradient">.</span>
           </h1>
           <h2 className="text-3xl md:text-4xl font-semibold text-muted-foreground mb-6 animate-fade-up-delay-2">

@@ -41,10 +41,10 @@
     --gradient-card: linear-gradient(145deg, hsl(217 33% 17%), hsl(217 33% 14%));
     --glow-primary: 0 0 30px hsl(172 66% 50% / 0.3);
     --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.5);
-    
+
     /* Section colors */
     --section-alt: 220 40% 13%;
-    
+
     /* Skill bar */
     --skill-bar-bg: 217 33% 25%;
     --skill-bar-fill: 172 66% 50%;
@@ -80,7 +80,7 @@
     --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
     --glow-primary: 0 0 30px hsl(172 66% 40% / 0.2);
     --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.1);
-    
+
     --section-alt: 210 40% 98%;
     --skill-bar-bg: 214 32% 91%;
     --skill-bar-fill: 172 66% 40%;
@@ -247,6 +247,7 @@
       opacity: 0;
       transform: translateY(30px);
     }
+
     to {
       opacity: 1;
       transform: translateY(0);
@@ -254,9 +255,12 @@
   }
 
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0);
     }
+
     50% {
       transform: translateY(-10px);
     }
@@ -264,5 +268,31 @@
 
   .animate-float {
     animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0
+    }
+
+    to {
+      width: 100%
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  .animate-typing {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid hsl(var(--primary));
+    width: 0;
+    animation:
+      typing 3.5s steps(30, end) forwards,
+      blink .75s step-end infinite;
   }
 }
