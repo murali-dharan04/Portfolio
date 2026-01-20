@@ -270,6 +270,22 @@
     animation: float 3s ease-in-out infinite;
   }
 
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    100% {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll 1.5s ease-in-out infinite;
+  }
+
   @keyframes typing {
     from {
       width: 0

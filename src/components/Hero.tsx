@@ -59,10 +59,11 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-float">
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
         <div className="w-6 h-10 rounded-full border-2 border-muted-foreground flex justify-center pt-2">
-          <div className="w-1 h-2 bg-muted-foreground rounded-full animate-pulse" />
+          <div className="w-1 h-2 bg-muted-foreground rounded-full animate-scroll" />
         </div>
+        <span className="text-xs text-muted-foreground tracking-widest uppercase">Scroll Down</span>
       </div>
     </section>
   );
