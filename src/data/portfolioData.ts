@@ -1,9 +1,10 @@
 import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 
 export const personalInfo = {
-  name: "Muralidharan",
-  role: "Machine Learning Engineer",
-  tagline: "Aspiring Machine Learning Engineer building intelligent systems.",
+  name: "Murali Dharan",
+  role: "AI/ML Engineer",
+  tagline: "Passionate about building intelligent systems.",
+  profileImage: "/profile.jpeg",
   summary: "Aspiring Machine Learning Engineer with strong foundations in Artificial Intelligence, Deep Learning, Data Science, and Predictive Analytics. Interested in building intelligent systems that solve real-world problems and deliver measurable business impact. Motivated Machine Learning Engineer focused on building scalable AI solutions using data-driven approaches. Passionate about continuous learning, research, and applying emerging technologies such as Retrieval-Augmented Generation (RAG) systems, deep learning, and cloud-based AI platforms.",
   email: "muralidharanengin@gmail.com",
   phone: "+91 9025999927",
