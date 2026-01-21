@@ -1,4 +1,4 @@
-import { ArrowDown, FileText } from "lucide-react";
+import { ArrowDown, FileText, ChevronDown } from "lucide-react";
 import { personalInfo } from "@/data/portfolioData";
 
 const Hero = () => {
@@ -59,12 +59,17 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
-        <div className="w-6 h-10 rounded-full border-2 border-muted-foreground flex justify-center pt-2 animate-mouse-glow backdrop-blur-sm bg-background/30">
-          <div className="w-1 h-1.5 bg-primary rounded-full animate-wheel" />
+      {/* Scroll indicator */}
+      <button
+        onClick={scrollToAbout}
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float transition-transform hover:scale-110 focus:outline-none"
+        aria-label="Scroll to about section"
+      >
+        <div className="w-12 h-12 rounded-full border border-primary/30 bg-background/30 backdrop-blur-md flex items-center justify-center shadow-[0_0_15px_rgba(var(--primary),0.3)] hover:shadow-[0_0_25px_hsl(var(--primary)/0.5)] transition-all duration-300 group">
+          <ChevronDown className="text-primary w-6 h-6 group-hover:translate-y-1 transition-transform duration-300" />
         </div>
         <span className="text-xs font-medium text-muted-foreground tracking-widest uppercase opacity-70">Scroll Down</span>
-      </div>
+      </button>
     </section>
   );
 };
